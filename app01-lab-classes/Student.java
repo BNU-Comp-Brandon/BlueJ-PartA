@@ -8,6 +8,9 @@ import java.util.*;
  * @version 2016.02.29
  * 
  * Modified by Derek
+ * 
+ * Modified by Brandon Lim-Kee
+ * Dated 04/02/21
  */
 public class Student
 {
@@ -16,6 +19,8 @@ public class Student
     private String name;
 
     private String id;
+    
+    private Course course;
     
     // A BSc course has 120 credits, each module has 15 Credits
     private int credits;
@@ -70,6 +75,11 @@ public class Student
     {
         return credits;
     }
+    
+    public void addCourse(Course x)
+    {
+         course = x;
+    }
 
     /**
      * Return the login name of this student. The login name is a combination
@@ -82,10 +92,11 @@ public class Student
     }
     
     /**
-     * Print the student's name and ID number to the output terminal.
+     * Print the student's name, ID number and Course CodeNum/Title to the output terminal.
      */
     public void print()
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        course.print();
     }
 }
