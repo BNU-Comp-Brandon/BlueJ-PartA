@@ -1,0 +1,38 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Friday 15th January 2021");
+Course Computing = new Course("G400", "Computing");
+Student MatthewL = new Student("Matthew Long", "4201");
+Student CaseyR = new Student("Casey Rin", "4202");
+Student JohnnyW = new Student("John White", "4203");
+JohnnyW.changeName("Johnny White");
+MatthewL.getCredits()
+    returned int 0
+MatthewL.addCredits(20);
+CaseyR.addCredits(20);
+JohnnyW.addCredits(20);
+MatthewL.addCourse(Computing);
+CaseyR.addCourse(Computing);
+JohnnyW.addCourse(Computing);
+MatthewL.print();
+
+Name: Matthew Long
+student ID: 4201
+credits: 20
+Code Number: G400
+Title: Computing
+CaseyR.print();
+
+Name: Casey Rin
+student ID: 4202
+credits: 20
+Code Number: G400
+Title: Computing
+JohnnyW.print();
+
+Name: Johnny White
+student ID: 4203
+credits: 20
+Code Number: G400
+Title: Computing

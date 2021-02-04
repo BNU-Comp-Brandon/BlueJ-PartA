@@ -96,7 +96,7 @@ public class Student
      */
     public void print()
     {
-        System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        System.out.println("\nName: " + name + "\nstudent ID: " + id + "\ncredits: " + credits);
         course.print();
     }
 }

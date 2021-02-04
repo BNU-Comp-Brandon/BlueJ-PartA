@@ -8,7 +8,7 @@
  */
 public class Course
 {
-    // The variables of the course 
+     
     private String codeNum;
     
     private String title;
@@ -18,7 +18,7 @@ public class Course
      */
     public Course(String Code, String Title)
     {
-        // initialise instance variables
+        
         codeNum = Code;
         title = Title;
     }
@@ -29,6 +29,6 @@ public class Course
      */
     public void print()
     {
-        System.out.println("Code Number: " + codeNum + "\nTitle " + title);
+        System.out.println("Code Number: " + codeNum + "\nTitle: " + title);
     }
 }
