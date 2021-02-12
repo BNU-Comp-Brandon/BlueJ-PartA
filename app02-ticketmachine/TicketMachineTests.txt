@@ -1,0 +1,154 @@
+TicketMachine ChilternRailways = new TicketMachine();
+ChilternRailways.availableTickets();
+------Available Tickets-----
+
+Destination: Aylesbury
+Cost: £2.20
+
+Destination: High Wycombe
+Cost: £3.30
+
+Destination: Amersham
+Cost: £3.00
+
+ChilternRailways.selectTicket();
+------Select Ticket-----
+
+Destination: Aylesbury
+Cost: £2.20
+
+Destination: High Wycombe
+Cost: £3.30
+
+Destination: Amersham
+Cost: £3.00
+
+Please select a ticket [1],[2] or [3]:
+1
+You have selected: Aylesbury
+Please enter: £2.20
+ChilternRailways.insertCoin(Coin.P2);
+You have entered £2.00
+The current balance is £2.00
+ChilternRailways.printTicket();
+You must insert at least: £0.20 more.
+ChilternRailways.insertCoin(Coin.P020);
+You have entered £0.20
+The current balance is £2.20
+ChilternRailways.printTicket();
+##################
+# The Chiltern Line
+# Ticket
+
+Destination: Aylesbury
+Cost: £2.20
+Date: Fri Feb 12 15:28:21 GMT 2021
+##################
+
+ChilternRailways.selectTicket();
+------Select Ticket-----
+
+Destination: Aylesbury
+Cost: £2.20
+
+Destination: High Wycombe
+Cost: £3.30
+
+Destination: Amersham
+Cost: £3.00
+
+Please select a ticket [1],[2] or [3]:
+2
+You have selected: High Wycombe
+Please enter: £3.30
+ChilternRailways.insertCoin(Coin.P2);
+You have entered £2.00
+The current balance is £2.00
+ChilternRailways.insertCoin(Coin.P2);
+You have entered £2.00
+The current balance is £4.00
+ChilternRailways.printTicket();
+##################
+# The Chiltern Line
+# Ticket
+
+Destination: High Wycombe
+Cost: £3.30
+Date: Fri Feb 12 15:28:21 GMT 2021
+##################
+
+ChilternRailways.refundBalance()
+Your refund is £0.70
+    returned float 0.70000005
+ChilternRailways.selectTicket();
+------Select Ticket-----
+
+Destination: Aylesbury
+Cost: £2.20
+
+Destination: High Wycombe
+Cost: £3.30
+
+Destination: Amersham
+Cost: £3.00
+
+Please select a ticket [1],[2] or [3]:
+3
+You have selected: Amersham
+Please enter: £3.00
+ChilternRailways.insertMoney(3f);
+You have entered £3.00
+The current balance is £3.00
+ChilternRailways.printTicket();
+##################
+# The Chiltern Line
+# Ticket
+
+Destination: Amersham
+Cost: £3.00
+Date: Fri Feb 12 15:28:21 GMT 2021
+##################
+
+ChilternRailways.selectTicket();
+------Select Ticket-----
+
+Destination: Aylesbury
+Cost: £2.20
+
+Destination: High Wycombe
+Cost: £3.30
+
+Destination: Amersham
+Cost: £3.00
+
+Please select a ticket [1],[2] or [3]:
+a
+Please Enter a valid Ticket
+------Select Ticket-----
+
+Destination: Aylesbury
+Cost: £2.20
+
+Destination: High Wycombe
+Cost: £3.30
+
+Destination: Amersham
+Cost: £3.00
+
+Please select a ticket [1],[2] or [3]:
+High Wycombe
+You have selected: High Wycombe
+Please enter: £3.30
+ChilternRailways.insertMoney(3.3f);
+You have entered £3.30
+The current balance is £3.30
+ChilternRailways.printTicket();
+##################
+# The Chiltern Line
+# Ticket
+
+Destination: High Wycombe
+Cost: £3.30
+Date: Fri Feb 12 15:28:21 GMT 2021
+##################
+

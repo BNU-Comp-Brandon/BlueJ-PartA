@@ -33,7 +33,7 @@ public class TicketMachine
     //Used to represent the value of a coin the user inserts
     private Coin coin;
     
-    //Used to convert any number being ouput to the user in a currency form
+    //Used to convert any number ouput to the user in a currency form
     private NumberFormat currency = NumberFormat.getCurrencyInstance();
 
     /**
@@ -44,8 +44,8 @@ public class TicketMachine
         balance = 0;
         total = 0;
         aylesbury = new Ticket("Aylesbury", 2.20f);
-        highWycombe = new Ticket("High Wycombe", 3);
-        amersham = new Ticket("Amersham", 3.30f);
+        highWycombe = new Ticket("High Wycombe", 3.30f);
+        amersham = new Ticket("Amersham", 3);
     }
     
     /**
@@ -71,7 +71,12 @@ public class TicketMachine
         while (i == 0)
         {
             Scanner myObj = new Scanner(System.in);
-            availableTickets();
+            
+            System.out.println("------Select Ticket-----\n");
+            aylesbury.details();
+            highWycombe.details();
+            amersham.details();
+            
             System.out.println("Please select a ticket [1],[2] or [3]:");
             //Take input from the user 
             String choice = myObj.nextLine();
@@ -90,6 +95,7 @@ public class TicketMachine
             else if(choice.equals ("High Wycombe")||choice.equals("2"))
             {
                 ticket_selected = highWycombe;
+                System.out.println("You have selected: High Wycombe");
                 System.out.println("Please enter: " + 
                     currency.format(ticket_selected.cost));                
                 i++;
@@ -98,6 +104,7 @@ public class TicketMachine
             else if(choice.equals ("Amersham")||choice.equals("3"))
             {
                 ticket_selected = amersham;
+                System.out.println("You have selected: Amersham");
                 System.out.println("Please enter: " + 
                     currency.format(ticket_selected.cost));                
                 i++;
@@ -129,6 +136,8 @@ public class TicketMachine
         if(amount > 0) 
         {
             balance = balance + amount;
+            System.out.println("You have entered " + currency.format(amount)
+            + "\nThe current balance is " + currency.format(balance));
         }
         else 
         {
@@ -160,7 +169,7 @@ public class TicketMachine
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
-            System.out.println("# The BlueJ Line");
+            System.out.println("# The Chiltern Line");
             System.out.println("# Ticket");
             ticket_selected.print();
             System.out.println("##################");
@@ -188,6 +197,7 @@ public class TicketMachine
         float amountToRefund;
         amountToRefund = balance;
         balance = 0;
+        System.out.println("Your refund is " + currency.format(amountToRefund));
         return amountToRefund;
     }
 }
