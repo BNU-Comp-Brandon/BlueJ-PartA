@@ -6,6 +6,9 @@ import java.util.*;
  * 
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
+ * 
+ * Modified By Brandon Lim-Kee
+ * Dated 23/02/21
  */
 public class Student
 {
@@ -59,7 +62,12 @@ public class Student
     {
         credits += additionalPoints;
     }
-
+    
+    public void adddCredits()
+    {
+        credits = 4 * 15;
+    }
+    
     
     /**
      * Return the number of credit points this student has accumulated.
@@ -81,12 +89,15 @@ public class Student
     
     /**
      * Print the student's name and ID number to the output terminal.
+     * Along with the details of the course(Mark and modules)
      */
     public void print()
     {
-        System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        System.out.println("\nName: " + name + "\nstudent ID: " + id + "\ncredits: " + credits + "/n");
+        course.print();
     }
     
+    //Enrols the student onto a course
     public void enrolOnCourse(Course course)
     {
         this.course = course;

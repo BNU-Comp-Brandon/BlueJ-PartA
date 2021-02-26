@@ -17,7 +17,7 @@ public class Ticket
     //Used to display the current date
     public Date date;
     
-    //Used to convert any number being ouput to the user in a currency form
+    //Used to convert any number ouput to the user in a currency form
     public NumberFormat currency = NumberFormat.getCurrencyInstance();
 
     /**
@@ -31,7 +31,7 @@ public class Ticket
     }
     
     /**
-     * Method to show details of a ticket to the user(before a purchase)
+     * Method to show details of a ticket to the user before a purchase
      */
     public void details()
     {

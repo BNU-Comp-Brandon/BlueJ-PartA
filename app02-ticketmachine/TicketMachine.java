@@ -26,13 +26,13 @@ public class TicketMachine
     private Ticket highWycombe;
 
     private Ticket amersham;
-    
+
     //Used to hold the ticket info that the user has selected
     private Ticket ticket_selected;
-    
+
     //Used to represent the value of a coin the user inserts
     private Coin coin;
-    
+
     //Used to convert any number ouput to the user in a currency form
     private NumberFormat currency = NumberFormat.getCurrencyInstance();
 
@@ -47,7 +47,7 @@ public class TicketMachine
         highWycombe = new Ticket("High Wycombe", 3.30f);
         amersham = new Ticket("Amersham", 3);
     }
-    
+
     /**
      * Used to ouput a list of all available tickets to the user 
      * and their details
@@ -60,7 +60,7 @@ public class TicketMachine
         amersham.details();
 
     }
-    
+
     /**
      * Method used to allow the user to select a ticket
      * If the user enters an invalid choice the method is reset
@@ -71,12 +71,12 @@ public class TicketMachine
         while (i == 0)
         {
             Scanner myObj = new Scanner(System.in);
-            
+
             System.out.println("------Select Ticket-----\n");
             aylesbury.details();
             highWycombe.details();
             amersham.details();
-            
+
             System.out.println("Please select a ticket [1],[2] or [3]:");
             //Take input from the user 
             String choice = myObj.nextLine();
@@ -88,7 +88,7 @@ public class TicketMachine
                 System.out.println("You have selected: Aylesbury");
                 System.out.println("Please enter: " + 
                     currency.format(ticket_selected.cost));
-                    //adds 1 to "i" and ends the loop
+                //adds 1 to "i" and ends the loop
                 i++;
             }
 
@@ -137,7 +137,7 @@ public class TicketMachine
         {
             balance = balance + amount;
             System.out.println("You have entered " + currency.format(amount)
-            + "\nThe current balance is " + currency.format(balance));
+                + "\nThe current balance is " + currency.format(balance));
         }
         else 
         {
@@ -145,7 +145,7 @@ public class TicketMachine
                 amount);
         }
     }
-    
+
     /**
      * allows the user enter money using coin amounts(10p,20p...)
      * and displays the current balance to them

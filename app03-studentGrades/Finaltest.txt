@@ -1,0 +1,41 @@
+Module Programmingconcepts = new Module("Programming concepts", "CO452");
+Module WebDevelopment = new Module("Web Development", "CO458");
+Module XML = new Module("XML", "CO456");
+Module ComputerArchitecture = new Module("ComputerArchitecture", "CO450");
+Course SoftwareEngineering = new Course("SE235", "Software Enginerring");
+Student BLK = new Student("Brandon Lim-Kee", "2345");
+Programmingconcepts.awardMark(120);
+Error: Mark cannot be higher than 100
+ Please try again
+Programmingconcepts.awardMark(1);
+Error: You have not completed the module try again
+Programmingconcepts.awardMark(56);
+WebDevelopment.awardMark(85);
+XML.awardMark(45);
+ComputerArchitecture.awardMark(67);
+SoftwareEngineering.addModules(Programmingconcepts, WebDevelopment, XML, ComputerArchitecture);
+SoftwareEngineering.calculateMean();
+SoftwareEngineering.getFinalGrade()
+    returned Object B
+BLK.addCredits(60);
+BLK.enrolOnCourse(SoftwareEngineering);
+BLK.print();
+
+Name: Brandon Lim-Kee
+student ID: 2345
+credits: 60/n
+
+ 	 ------Course Details------
+
+Course: SE235 - Software Enginerring
+
+Module: CO452 - Programming concepts 56%
+
+Module: CO458 - Web Development 85%
+
+Module: CO456 - XML 45%
+
+Module: CO450 - ComputerArchitecture 67%
+
+Final Grade: B
+

@@ -1,11 +1,14 @@
 
 /**
- * Enumeration class Grades - write a description of the enum class here
+ * Enumeration class Grades - Used to represents the grades a student
+ * could recieve for a course
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Brandon Lim-Kee
+ * @version 23/02/21
  */
 public enum Grades
 {
     X, F, D, C, B, A
 }
+
+
