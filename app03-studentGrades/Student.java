@@ -63,6 +63,7 @@ public class Student
         credits += additionalPoints;
     }
     
+    //adds the credits to the student 15 per modules
     public void adddCredits()
     {
         credits = 4 * 15;
@@ -93,7 +94,7 @@ public class Student
      */
     public void print()
     {
-        System.out.println("\nName: " + name + "\nstudent ID: " + id + "\ncredits: " + credits + "/n");
+        System.out.println("\nName: " + name + "\nstudent ID: " + id + "\ncredits: " + credits + "\n");
         course.print();
     }
     

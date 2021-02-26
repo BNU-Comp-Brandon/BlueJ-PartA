@@ -1,41 +1,46 @@
-Module Programmingconcepts = new Module("Programming concepts", "CO452");
-Module WebDevelopment = new Module("Web Development", "CO458");
+Module ProgrammingConcepts = new Module("Programming Concepts", "C0452");
+Module WebDevelopment = new Module("Web Development", "C0458");
 Module XML = new Module("XML", "CO456");
-Module ComputerArchitecture = new Module("ComputerArchitecture", "CO450");
-Course SoftwareEngineering = new Course("SE235", "Software Enginerring");
-Student BLK = new Student("Brandon Lim-Kee", "2345");
-Programmingconcepts.awardMark(120);
+Module ComputerArchitecture = new Module("Computer Architecture", "C0450");
+Course SoftwareEngineering = new Course("SE344", "Software Enginnering");
+Student BLK = new Student("Brandon Lim-Kee", "5345");
+ProgrammingConcepts.awardMark(10);
+Error: You have not completed the module try again
+ProgrammingConcepts.awardMark(101);
 Error: Mark cannot be higher than 100
  Please try again
-Programmingconcepts.awardMark(1);
-Error: You have not completed the module try again
-Programmingconcepts.awardMark(56);
-WebDevelopment.awardMark(85);
-XML.awardMark(45);
-ComputerArchitecture.awardMark(67);
-SoftwareEngineering.addModules(Programmingconcepts, WebDevelopment, XML, ComputerArchitecture);
+ProgrammingConcepts.awardMark(45);
+XML.awardMark(76);
+ComputerArchitecture.awardMark(55);
+SoftwareEngineering.addModules(ProgrammingConcepts, WebDevelopment, XML, ComputerArchitecture);
+SoftwareEngineering.calculateMean();
+Error: Web Development is not complete
+WebDevelopment.awardMark(50);
 SoftwareEngineering.calculateMean();
 SoftwareEngineering.getFinalGrade()
     returned Object B
-BLK.addCredits(60);
 BLK.enrolOnCourse(SoftwareEngineering);
+BLK.getLoginName()
+    returned String "Bran534"
+BLK.adddCredits();
 BLK.print();
 
 Name: Brandon Lim-Kee
-student ID: 2345
-credits: 60/n
+student ID: 5345
+credits: 60
+
 
  	 ------Course Details------
 
-Course: SE235 - Software Enginerring
+Course: SE344 - Software Enginnering
 
-Module: CO452 - Programming concepts 56%
+Module: C0452 - Programming Concepts 45%
 
-Module: CO458 - Web Development 85%
+Module: C0458 - Web Development 50%
 
-Module: CO456 - XML 45%
+Module: CO456 - XML 76%
 
-Module: CO450 - ComputerArchitecture 67%
+Module: C0450 - Computer Architecture 55%
 
 Final Grade: B
 

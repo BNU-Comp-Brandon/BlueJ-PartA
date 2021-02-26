@@ -10,7 +10,7 @@ import java.util.*;
 public class Module
 {
     // instance variables - replace the example below with your own
-    private String title;
+    public String title;
     private String code;
     private int mark;
     private String finalGrade;

@@ -54,6 +54,15 @@ public class Course
     {
         for(int i = 0; i < 4;i++)
         {
+            if(modules.get(i).getMark() < 40)
+            {
+              System.out.println("Error: " + modules.get(i).title + " is not complete");
+              break;
+            }
+        }
+        
+        for(int i = 0; i < 4;i++)
+        {
             mean = mean + modules.get(i).getMark();
         }
         
