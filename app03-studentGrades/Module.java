@@ -13,7 +13,6 @@ public class Module
     public String title;
     private String code;
     private int mark;
-    private String finalGrade;
 
     /**
      * Constructor for objects of class Module

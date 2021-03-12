@@ -1,0 +1,93 @@
+StockManager BrandonStockManager = new StockManager();
+StockDemo BrandonStockDemo = new StockDemo(BrandonStockManager);
+BrandonStockDemo.runDemo();
+
+Brandon's Stock List
+====================
+
+101: Apple stock level: 0
+102: Orange stock level: 0
+103: Strawberry stock level: 0
+104: Peach stock level: 0
+105: Pineapple stock level: 0
+106: Banana stock level: 0
+107: Lemon stock level: 0
+108: atermelon stock level: 0
+109: Lime stock level: 0
+110: Grape stock level: 0
+
+Delivering products
+Error: Could not find ID: 510
+
+Brandon's Stock List
+====================
+
+101: Apple stock level: 100
+102: Orange stock level: 100
+103: Strawberry stock level: 100
+104: Peach stock level: 100
+105: Pineapple stock level: 100
+106: Banana stock level: 100
+107: Lemon stock level: 100
+108: atermelon stock level: 100
+109: Lime stock level: 100
+110: Grape stock level: 100
+
+Selling products
+Attempt to sell more of a product than in stock
+Attempt to sell 500 Apple when there is only 100 in stock
+
+Brandon's Stock List
+====================
+
+101: Apple stock level: 100
+102: Orange stock level: 5
+103: Strawberry stock level: 95
+104: Peach stock level: 95
+105: Pineapple stock level: 5
+106: Banana stock level: 95
+107: Lemon stock level: 95
+108: atermelon stock level: 95
+109: Lime stock level: 5
+110: Grape stock level: 95
+
+Name change from atermelon to Watermelon
+
+Brandon's Stock List
+====================
+
+101: Apple stock level: 100
+102: Orange stock level: 5
+103: Strawberry stock level: 95
+104: Peach stock level: 95
+105: Pineapple stock level: 5
+106: Banana stock level: 95
+107: Lemon stock level: 95
+108: Watermelon stock level: 95
+109: Lime stock level: 5
+110: Grape stock level: 95
+
+Removing product Orange from the stock list
+
+Brandon's Stock List
+====================
+
+101: Apple stock level: 100
+103: Strawberry stock level: 95
+104: Peach stock level: 95
+105: Pineapple stock level: 5
+106: Banana stock level: 95
+107: Lemon stock level: 95
+108: Watermelon stock level: 95
+109: Lime stock level: 5
+110: Grape stock level: 95
+
+List of products with keyword [L]
+
+107: Lemon stock level: 95
+109: Lime stock level: 5
+
+Check low stock
+
+105: Pineapple is low on stock, only 5 in stock
+109: Lime is low on stock, only 5 in stock

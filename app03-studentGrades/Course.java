@@ -39,16 +39,16 @@ public class Course
     {
         System.out.println("\n \t ------Course Details------\n");
         System.out.println("Course: " + codeNo + " - " + title + "\n");
-        
+
         for(int i = 0; i < 4; i++)
         {
             modules.get(i).print();
         }
-        
+
         System.out.println("Final Grade: " + grade + "\n");
-    
+
     }
-    
+
     //Calculates the mean of the 4 module marks
     public void calculateMean()
     {
@@ -56,23 +56,54 @@ public class Course
         {
             if(modules.get(i).getMark() < 40)
             {
-              System.out.println("Error: " + modules.get(i).title + " is not complete");
-              break;
+                System.out.println("Error: " + modules.get(i).title + " is not complete");
+                break;
             }
         }
-        
+
         for(int i = 0; i < 4;i++)
         {
             mean = mean + modules.get(i).getMark();
         }
-        
+
         int numModules = modules.size();
         mean = mean/numModules;
-        
-        
+
+        List<Integer> gradeRequirement = List.of(39,49,59,69,100);
+        for(int i = 0; i <= 5; i++)
+        {
+            if(mean <= gradeRequirement.get(i))
+            {
+                if(i == 0)
+                {
+                    grade = grade.F;
+                }
+
+                else if(i == 1)
+                {
+                    grade = grade.D;
+                }
+
+                else if(i == 2)
+                {
+                    grade = grade.C;
+                }
+
+                else if(i == 3)
+                {
+                    grade = grade.B;
+                }
+
+                else if(i == 4)
+                {
+                    grade = grade.A;
+                }
+                
+                break;
+            }
+        }
     }
-    
-   
+
     //Checks the mean against different possible marks to get a final mark
     public Grades getFinalGrade()
     {
@@ -80,39 +111,36 @@ public class Course
         {
             grade = grade.F;
         }
-        
+
         else if(mean <= 49)
         {
             grade = grade.D;
         }
-        
+
         else if(mean <= 59)
         {
             grade = grade.C;
         }
-        
+
         else if(mean <= 69)
         {
             grade = grade.B;
         }
-        
+
         else if(mean <= 100)
         {
             grade = grade.A;
         }
-        
+
         return grade;
     }
-    
+
     // Adds 4 modules to the arraylist
-    public void addModules(Module module1, Module module2,
-    Module module3, Module module4)
+    public void addModules(Module module)
+
     {
-        List<Module> moduleList = List.of(module1,module2,module3,module4);
-        
-        for(int i = 0; i < 4; i++)
-        {
-            this.modules.add(i, moduleList.get(i));
-        }
+        //List<Module> moduleList = List.of(module1,module2,module3,module4);
+
+        modules.add(module);
     }
 }

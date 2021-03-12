@@ -1,17 +1,20 @@
 /**
- * Model some details of a product sold by a company.
+ * Represents a product and all its details including name, id and quantity
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * 
+ * Edited By Brandon Lim-Kee
+ * Version 28/02/2021
  */
 public class Product
 {
     // An identifying number for this product.
     private int id;
     // The name of this product.
-    private String name;
+    public String name;
     // The quantity of this product in stock.
-    private int quantity;
+    public int quantity;
 
     /**
      * Constructor for objects of class Product.
@@ -60,9 +63,6 @@ public class Product
 
     /**
      * Restock with the given amount of this product.
-     * The current quantity is incremented by the given amount.
-     * @param amount The number of new items added to the stock.
-     *               This must be greater than zero.
      */
     public void increaseQuantity(int amount)
     {
@@ -73,24 +73,30 @@ public class Product
         else 
         {
             System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
+                " with a non-positive amount: " + amount);
         }
     }
 
     /**
-     * Sell one of these products.
-     * An error is reported if there appears to be no stock.
+     * Sell a quantity of products.
+     * An error is reported if there appears to be no stock or 
+     * if user tries to sell more quantity than avaliable.
      */
-    public void sellOne()
+    public void sellQuantity(int amount)
     {
-        if(quantity > 0) 
+        if(amount == 0)
         {
-            quantity--;
+            System.out.println("Error: Must enter a positive value");
         }
-        else 
+        else if(amount <= quantity) 
         {
-            System.out.println(
-                "Attempt to sell an out of stock item: " + name);
+            quantity -= amount;
+        }
+        else if(amount > quantity) 
+        {
+            System.out.println("Attempt to sell more of a product than in stock");
+            System.out.println("Attempt to sell " + amount + " " + name + 
+                " when there is only " + quantity + " in stock");
         }
     }
 }
