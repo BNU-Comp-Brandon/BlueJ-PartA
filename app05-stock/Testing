@@ -1,0 +1,200 @@
+8
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > deliver
+
+Brandon's Stock List
+====================
+
+111: PS1 stock level: 0
+112: PS2 stock level: 8
+114: PS4 stock level: 0
+115: Book1 stock level: 0
+116: Book2 stock level: 0
+117: Book3 stock level: 0
+118: Book4 stock level: 0
+
+Please enter the ID of the Product you wish to deliver
+112
+Please enter the amount you would like to deliver
+-4
+Your value is less than zero!
+Please enter the amount you would like to deliver
+1
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > sell
+Please enter the ID of the Product you wish to sell
+112
+Please enter the amount you would like to sell
+1
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > sell
+Please enter the ID of the Product you wish to sell
+112
+Please enter the amount you would like to sell
+2
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > sell
+Please enter the ID of the Product you wish to sell
+112
+Please enter the amount you would like to sell
+10
+Attempt to sell more of a product than in stock
+Attempt to sell 10 PS2 when there is only 6 in stock
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > sell
+Please enter the ID of the Product you wish to sell
+112
+Please enter the amount you would like to sell
+-2
+Your value is less than zero!
+Please enter the amount you would like to sell
+2
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > search
+Please enter a keyword to search for products withPS
+List of products with keyword [PS]
+
+111: PS1 stock level: 0
+112: PS2 stock level: 4
+114: PS4 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > low
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > lowstock
+ Low-Stock Products
+
+111: PS1 stock level: 0
+112: PS2 stock level: 4
+114: PS4 stock level: 0
+115: Book1 stock level: 0
+116: Book2 stock level: 0
+117: Book3 stock level: 0
+118: Book4 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Brandon Lim-Kee
+******************************
+
+   [1]Add:        Add a new product
+   [2]Remove:     Remove an old product
+   [3]PrintAll:   Print all products
+   [4]Deliver:    Increase stock of products
+   [5]Sell:       Sell products
+   [6]Search:     Find specific product/s
+   [7]Re-Stock:   Re-stock all products low on stock
+   [8]Low-Stock:  Show all products low on stock
+   [9]Quit:       Quit the program
+
+Please enter your choice > 
